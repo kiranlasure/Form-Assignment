@@ -6,9 +6,10 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 
 import { ChildComponent } from './child/child.component';
+import { FlexLayoutModule } from "@angular/flex-layout";
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
+  imports:      [ BrowserModule, FormsModule,FlexLayoutModule ],
   declarations: [ AppComponent, HelloComponent,  ChildComponent ],
   bootstrap:    [ AppComponent ]
 })

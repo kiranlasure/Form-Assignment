@@ -1,26 +1,31 @@
-<form>
+<form #userForm="ngForm">
+
+  {{userForm.value | json}}
 <div fxLayout="column" fxLayoutGap= "15px">
-<div class="ki">
-  <label>Name</label><input type="text">
+<div  >
+  <label>Name</label><input #name type="text" name="name" ngModel>
+  {{name.touched}}
 </div>
-<div class="ki">
+<div  >
   <label>Email</label>
-  <input type="email">
+  <input type="email" ngModel name="email">
 </div>
-<div class="ki">
+<div  >
   <label>Pone Number</label>
-  <input type="tel">
+  <input type="tel" ngModel name="phone">
 </div>
-<div class="ki">
-  <select>
+<div  >
+  <select ngModel name="topic">
     <option selected>I am select</option>
     <option *ngFor="let topic of topics">{{topic}}</option>
   </select>
 </div>
-<div class="ki">
-  <input type="radio" value= "morning">
+<div  >
+  <input type="radio" value= "morning" ngModel name="Time Preference">
   <label>Morning(9Am-12Am</label>
-  <input type="radio" value="evening">
+</div>
+<div>
+  <input type="radio" value="evening" ngModel name="Tiem Preference" >
   <label>evening(5pm-9pm)</label>
 </div>
 <div>
