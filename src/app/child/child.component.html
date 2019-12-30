@@ -1,12 +1,31 @@
+<form>
 <div fxLayout="column" fxLayoutGap= "15px">
-<div class="ki">ki
+<div class="ki">
+  <label>Name</label>
+  <input type="text"
 </div>
-<div class="ki">ki
+<div class="ki">
+  <label>Email</label>
+  <input type="email">
 </div>
-<div class="ki">ki
+<div class="ki">
+  <label>Pone Number</label>
+  <input type="tel">
 </div>
-<div class="ki">ki
+<div class="ki">
+  <select>
+    <option selected>I am select</option>
+    <option *ngFor="let topic of topics">{{topic}}</option>
+  </select>
 </div>
-<div class="ki">ki
+<div class="ki">
+  <input type="radio" value= "morning">
+  <label>Morning(9Am-12Am</label>
+  <input type="radio" value="evening">
+  <label>evening(5pm-9pm)</label>
+</div>
+<div>
+  <button type="submit">SumitForm</button>
 </div>
 </div>
+</form>

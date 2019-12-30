@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChildComponent implements OnInit {
 
+  topics = ["Angular","View","React"];
   constructor() { }
 
   ngOnInit() {
